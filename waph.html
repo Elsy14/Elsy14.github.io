@@ -11,47 +11,4 @@
     Using the <a href="https://www.w3schools.com/html">W3Schools Template</a>
 
 </body>
-  <div id="message"></div>
-
-    <script>
-        // Function to set a cookie
-        function setCookie(cookieName, cookieValue, expirationDays) {
-            var d = new Date();
-            d.setTime(d.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
-            var expires = "expires=" + d.toUTCString();
-            document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
-        }
-
-        // Function to get a cookie value
-        function getCookie(cookieName) {
-            var name = cookieName + "=";
-            var decodedCookie = decodeURIComponent(document.cookie);
-            var cookieArray = decodedCookie.split(';');
-            for (var i = 0; i < cookieArray.length; i++) {
-                var cookie = cookieArray[i];
-                while (cookie.charAt(0) === ' ') {
-                    cookie = cookie.substring(1);
-                }
-                if (cookie.indexOf(name) === 0) {
-                    return cookie.substring(name.length, cookie.length);
-                }
-            }
-            return "";
-        }
-
-        // Function to check if the user is visiting for the first time
-        function checkFirstVisit() {
-            var lastVisit = getCookie("lastVisit");
-            if (lastVisit === "") {
-                var currentDate = new Date();
-                setCookie("lastVisit", currentDate.toUTCString(), 365); // Cookie will expire after 1 year
-                document.getElementById("message").innerHTML = "Welcome to my homepage!";
-            } else {
-                document.getElementById("message").innerHTML = "Welcome back! Your last visit was " + lastVisit;
-            }
-        }
-
-        // Call the function to check for first visit
-        checkFirstVisit();
-    </script>
 </html>
