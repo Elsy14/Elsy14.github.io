@@ -21,7 +21,7 @@
 		
 		<a href="https://www.linkedin.com/in/elsyprempeh/">LinkedIn</a>
 	<h3>Education</h3>
-		<p>I am currently in my fourth year pursuing my bachelor's in cyber security and a masters in IT at the same time at the University of Cincinnati College of Education, Criminal Justice and Human Services. i will be expected to graduate in May 2025</p>
+		<p>I am currently in my fourth year pursuing my bachelor's in cyber security and a masters in IT at the same time at the University of Cincinnati College of Education, Criminal Justice and Human Services. My expected in May 2025</p>
 	
 	<h3>Experience</h3>
 		<dl>
@@ -130,7 +130,7 @@
 <h2>Front-end Web Development Practice</h2>
 	<div>
 	<h4>Jquery and Javascript</h4>
-		<div id="date" onclick="document.getElementById('date').innerHTML= Date()">Click here to show date()</div>
+		<!-- <div id="date" onclick="document.getElementById('date').innerHTML= Date()">Click here to show date()</div> -->
 		<br>
 		<div id="digit-clock"></div><br>
 		<canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
@@ -158,33 +158,65 @@
 		}
 		</script>
 		<p>Another inline example is the show email function in the Contact Me section above</p>
+		<!-- ADD ANOTHER EXAMPLE OF JAVA -->
 	</div>
 	<div>
 	<h4>Web APIs</h4>
+		<div>
+		<p>Joke APi Generation: </p>
 		<div id="response"></div>
-		<script>
-			$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
-				function(result) {
-					console.log("From jokeAPU: " + JSON.stringify(result));
-					$("#response" ).html("A programming joke of the day: " + result.joke);
-					}
-			); //this will execute automatically
+			<script>
+				$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+					function(result) {
+						console.log("From jokeAPU: " + JSON.stringify(result));
+						$("#response" ).html("A programming joke of the day: " + result.joke);
+						}
+				); //this will execute automatically
+				
+				(async function jokeAPIfetch() {
+					const jokeAPI_res = await fetch("https://v2.jokeapi.dev/joke/Programming?type=single");
+					const result = await jokeAPI_res.json();
+					$("#response" ).html( "A programming joke of the day: " + result.joke); 
+				})() //fetch using async/await
+	
+				fetch("https://v2.jokeapi.dev/joke/Programming?type=single")
+					.then((response) => {
+						return response.json();
+					}).then(result =>{
+						$("#response" ).html( "A programming joke of the day: " +  result.joke);
+					}) //fetch using Promise changing
+			</script>
+		</div>
+		<div>	
+	    	<div id="weather-info"></div>
+			<script>
+			// Function to make HTTP request to the Weather API
+			function fetchWeather() {
+			    // API URL
+			    var apiUrl = 'https://api.weatherbit.io/v2.0/current?lat=84.5120&lon=39.1031&include=minutely&city=%26city%3DCincinnati%2COH&postal_code=45219&units=S&lang=el&key=5f6eb45e8b6c40dfb10bd909ec915377';
+			    
+			    // Make the request
+			    fetch(apiUrl)
+				.then(response => response.json())
+				.then(data => {
+				    // Extract relevant weather information
+				    var weatherData = data.data[0];
+				    var temperature = weatherData.temp;
+				    var description = weatherData.weather.description;
 			
-			(async function jokeAPIfetch() {
-				const jokeAPI_res = await fetch("https://v2.jokeapi.dev/joke/Programming?type=single");
-				const result = await jokeAPI_res.json();
-				$("#response" ).html( "A programming joke of the day: " + result.joke); 
-			})() //fetch using async/await
-
-			fetch("https://v2.jokeapi.dev/joke/Programming?type=single")
-				.then((response) => {
-					return response.json();
-				}).then(result =>{
-					$("#response" ).html( "A programming joke of the day: " +  result.joke);
-				}) //fetch using Promise changing
-		</script>
-		
-		div id - weather
+				    // Display the information in the DOM
+				    document.getElementById('weather-info').innerHTML = `<p>Temperature: ${temperature}°C</p><p>Description: ${description}</p>`;
+				})
+				.catch(error => {
+				    console.error('Error fetching weather data:', error);
+				    document.getElementById('weather-info').innerHTML = '<p>Error fetching weather data. Please try again later.</p>';
+				});
+			}
+			
+			// Call the fetchWeather function when the page loads
+			window.onload = fetchWeather;
+			</script>
+		</div>
 
 <div>
   <p>A simple HTML page</p>
