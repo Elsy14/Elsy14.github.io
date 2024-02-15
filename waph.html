@@ -126,8 +126,8 @@
 			drawTime(ctx,radius);
 		}
 		</script>
-		/** joke api **/
-		<div id="repsonse"></div>
+
+		<div id="response"></div>
 		<script>
 			$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
 				function(result) {
@@ -148,6 +148,7 @@
 				}).then(result =>{
 					$("#response" ).html( "A programming joke of the day: " +  result.joke);
 				}) //fetch using Promise changing
+		</script>
 	</div>
 		
 
