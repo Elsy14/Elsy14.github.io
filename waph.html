@@ -103,7 +103,7 @@
 		<br>
 		<div id="digit-clock"></div><br>
 		<canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
-		//<script src="https://waph-uc.github.io/clock.js"></script>
+		<script src="https://waph-uc.github.io/clock.js"></script>
 	
 		<script type="text/javascript">
 		function displayTime() {
@@ -126,6 +126,26 @@
 			drawTime(ctx,radius);
 		}
 		</script>
+		<script>
+					$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+				function(result) {
+					console.log("From jokeAPU: " + JSON.stringify(result));
+					$("#response" ).html("A programming joke of the day: " + result.joke);
+					}
+			); //this will execute automatically
+			
+			(async function jokeAPIfetch() {
+				const jokeAPI_res = await fetch("https://v2.jokeapi.dev/joke/Programming?type=single");
+				const result = await jokeAPI_res.json();
+				$("#response" ).html( "A programming joke of the day: " + result.joke); 
+			})() //fetch using async/await
+
+			fetch("https://v2.jokeapi.dev/joke/Programming?type=single")
+				.then((response) => {
+					return response.json();
+				}).then(result =>{
+					$("#response" ).html( "A programming joke of the day: " +  result.joke);
+				}) //fetch using Promise changing
 	</div>
 		
 
