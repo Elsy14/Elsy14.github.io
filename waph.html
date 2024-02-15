@@ -130,31 +130,37 @@
 		<div id="response"></div>
 		//joke api script:
 		<script>
+		/*
 		$.get("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt",
 			function(result) {
 				console.log("From jokeAPU: " + JSON.stringify(result));
 				$("#response" ).html("A programming joke of the day: " + result.joke);
 				}
 		); //this will execute automatically
-		/*
+  		*/
+		
 		(async function jokeAPIfetch() {
 			const jokeAPI_res = await fetch("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt");
 			const result = await jokeAPI_res.json();
 			$("#response" ).html( "A programming joke of the day: " + result.joke); 
 		})() //fetch using async/await
-		**/
-		/**
+		
 		fetch("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt")
 			.then((response) => {
 				return response.json();
 			}).then(result =>{
 				$("#response" ).html( "A programming joke of the day: " +  result.joke);
 			}) //fetch using Promise changing
-   		**/
 		</script>
-		//weather api
-	</div>
-</div>
+		<div id="weather"></div>
+		// weather api
+		<script>
+		async function displayWeath(name){
+				const weather = await fetch("https://api.weatherbit.io/v2.0/current?lat=39.1031&lon=84.5120&key=XXX&units=I);
+				$("#weather" ).html("Hi " + name + ", your age should be " + result.age);
+			}
+		</script>
+
 <div>
   <p>A simple HTML page</p>
     Using the <a href="https://www.w3schools.com/html">W3Schools Template</a>
