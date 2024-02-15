@@ -83,7 +83,8 @@
 		}
 		</script>
 	<i>Web API</i>
-		$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+		<script>
+		$.get("https://https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx",
 			function(result) {
 				console.log("From jokeAPU: " + JSON.stringify(result));
 				$("#response" ).html("A programming joke of the day: " + result.joke);
@@ -102,7 +103,7 @@
 			}).then(result =>{
 				$("#response" ).html( "A programming joke of the day: " +  result.joke);
 			}) //fetch using Promise changing
-	
+	</script>
 </div>
   <p>A simple HTML page</p>
     Using the <a href="https://www.w3schools.com/html">W3Schools Template</a>
