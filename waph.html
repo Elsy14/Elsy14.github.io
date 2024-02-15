@@ -131,12 +131,12 @@
 		// joke api script
 		<script>
 			$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
-							function(result) {
-								console.log("From jokeAPU: " + JSON.stringify(result));
-								$("#response" ).html("A programming joke of the day: " + result.joke);
-								}
-						); //this will execute automatically
-			
+				function(result) {
+					console.log("From jokeAPU: " + JSON.stringify(result));
+					$("#response" ).html("A programming joke of the day: " + result.joke);
+					}
+				); //this will execute automatically
+	
 			(async function jokeAPIfetch() {
 				const jokeAPI_res = await fetch("https://v2.jokeapi.dev/joke/Programming?type=single");
 				const result = await jokeAPI_res.json();
@@ -149,9 +149,9 @@
 				}).then(result =>{
 					$("#response" ).html( "A programming joke of the day: " +  result.joke);
 				}) //fetch using Promise changing
-
 			}		
 		</script>
+		
 		<div id="weather"></div>
 		/**
 		
