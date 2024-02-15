@@ -99,8 +99,8 @@
 	<h2>Front-end Web development Practice</h2>
 	<i>Jquery and Javascript</i>
 		<div id="date" onclick="document.getElementById('date').innerHTML= Date()">Click here to show date()</div>
-	
-		<div id="digit-clock"></div>
+		<br>
+		<div id="digit-clock"></div><br>
 		<canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
 		//<script src="https://waph-uc.github.io/clock.js"></script>
 	
@@ -128,6 +128,7 @@
 	<div>
 	<i>Web API</i>
 		<div id="response"></div>
+		//joke api script:
 		<script>
 		$.get("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx",
 			function(result) {
@@ -149,6 +150,7 @@
 				$("#response" ).html( "A programming joke of the day: " +  result.joke);
 			}) //fetch using Promise changing
 		</script>
+		//weather api
 	</div>
 </div>
 <div>
