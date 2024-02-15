@@ -65,6 +65,7 @@
 		function displayTime() {
 				document.getElementById('digit-clock').innerHTML= "Current time: " + new Date();
 		}
+			//possibly add some kind of background to this
 		setInterval(displayTime,500);
 			
 		//code for analog clock
@@ -82,6 +83,26 @@
 		}
 		</script>
 	<i>Web API</i>
+		//script for joke api
+		$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+			function(result) {
+				console.log("From jokeAPU: " + JSON.stringify(result));
+				$("#response" ).html("A programming joke of the day: " + result.joke);
+				}
+		); //this will execute automatically
+		
+		(async function jokeAPIfetch() {
+			const jokeAPI_res = await fetch("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx");
+			const result = await jokeAPI_res.json();
+			$("#response" ).html( "A programming joke of the day: " + result.joke); 
+		})() //fetch using async/await
+
+		fetch("https://https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx")
+			.then((response) => {
+				return response.json();
+			}).then(result =>{
+				$("#response" ).html( "A programming joke of the day: " +  result.joke);
+			}) //fetch using Promise changing
 	
 </div>
   <p>A simple HTML page</p>
