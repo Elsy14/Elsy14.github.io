@@ -82,6 +82,7 @@
 			drawTime(ctx,radius);
 		}
 		</script>
+	<div>
 	<i>Web API</i>
 		<script>
 		$.get("https://https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx",
@@ -103,15 +104,14 @@
 			}).then(result =>{
 				$("#response" ).html( "A programming joke of the day: " +  result.joke);
 			}) //fetch using Promise changing
-	</script>
+		</script>
+	</div>
 </div>
   <p>A simple HTML page</p>
     Using the <a href="https://www.w3schools.com/html">W3Schools Template</a>
 </body>
 
     <script>
-      //script: 
-      
       //script: javascript cookies to remember client
         // Function to set a cookie
         function setCookie(cookieName, cookieValue, expirationDays) {
