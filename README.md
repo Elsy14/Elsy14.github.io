@@ -1,5 +1,5 @@
 # Waph-Prempeea: Web Application Programming and Hacking
-![My Headshot](../../images/headshot.jpg)
+![My Headshot](images/headshot.jpg)
 
 ## Instructor: Dr. Phu Phung
 
@@ -7,9 +7,20 @@
 
 ## Overview
 
-[https://github.com/Elsy14/waph-prempeea/tree/main/labs/lab2](https://github.com/Elsy14/waph-prempeea/tree/main/labs/lab2)
+[https://github.com/Elsy14/Elsy14.github.io/tree/main](https://github.com/Elsy14/Elsy14.github.io/tree/main))
 
-In this lab, I built on the last html webpage I made for lab1. In task I, I created forms in HTML and incorporated javascript with inline, same-site file, and remote javascript files.
-In task 2, I added Ajax, CSS, and jQuery to my Html page. I then used jQuery to demonstrate GET and POST requests. I finally incorporated WEB API integration with javascript and jQuery and fetch() for the input user agify API.
+In this assignement...
 
-### Task 1: Basic HTML with forms, and JavaScript 
+### Deoploy personal site in GitHub cloud
+
+Included Professional profile with resume. Course Info
+
+### Non-technical requirements
+-css
+-page tracker
+
+### Technical Requirements
+## Basic JavaScript Code
+show hide email in contact info
+## Web API
+## Java Script cookies
