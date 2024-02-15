@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	// style
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Elsy's Profile</title>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
@@ -90,7 +90,7 @@
 </div>
 <div>	
 	<h2>Course: Web Application Development and Hacking</h2>
-	<h4>Proffessor: Dr. Phu Phung</h4>
+	<h4>Professor: Dr. Phu Phung</h4>
 	  
 	<h3>Course: Web Application Programming and Hacking</h3>
 		<p>[course info]</p>
@@ -99,7 +99,7 @@
 <div>
 <h2>Front-end Web development Practice</h2><br>
 	<div>
-	<i>Jquery and Javascript</i><br>
+	<h4>Jquery and Javascript</h4>
 		<div id="date" onclick="document.getElementById('date').innerHTML= Date()">Click here to show date()</div>
 		<br>
 		<div id="digit-clock"></div><br>
@@ -129,7 +129,7 @@
 		</script>
 	</div>
 	<div>
-	<i>Web APIs </i>
+	<h4>Web APIs</h4>
 		<div id="response"></div>
 		<script>
 			$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
@@ -152,7 +152,8 @@
 					$("#response" ).html( "A programming joke of the day: " +  result.joke);
 				}) //fetch using Promise changing
 		</script>
-	</div>
+		//div id - weather
+
 <div>
   <p>A simple HTML page</p>
     Using the <a href="https://www.w3schools.com/html">W3Schools Template</a>
