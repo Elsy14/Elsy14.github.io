@@ -130,14 +130,14 @@
 		<div id="response"></div>
 		//joke api script:
 		<script>
-		/*
+		
 		$.get("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt",
 			function(result) {
 				console.log("From jokeAPU: " + JSON.stringify(result));
 				$("#response" ).html("A programming joke of the day: " + result.joke);
 				}
 		); //this will execute automatically
-  		*/
+  		
 		
 		(async function jokeAPIfetch() {
 			const jokeAPI_res = await fetch("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt");
