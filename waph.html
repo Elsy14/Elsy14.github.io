@@ -128,7 +128,7 @@
 	<div>
 	<i>Web API</i>
 		<script>
-		$.get("https://https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx",
+		$.get("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx",
 			function(result) {
 				console.log("From jokeAPU: " + JSON.stringify(result));
 				$("#response" ).html("A programming joke of the day: " + result.joke);
@@ -141,7 +141,7 @@
 			$("#response" ).html( "A programming joke of the day: " + result.joke); 
 		})() //fetch using async/await
 
-		fetch("https://https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx")
+		fetch("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx")
 			.then((response) => {
 				return response.json();
 			}).then(result =>{
