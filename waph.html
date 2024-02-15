@@ -136,19 +136,21 @@
 				$("#response" ).html("A programming joke of the day: " + result.joke);
 				}
 		); //this will execute automatically
-		
+		/*
 		(async function jokeAPIfetch() {
 			const jokeAPI_res = await fetch("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx");
 			const result = await jokeAPI_res.json();
 			$("#response" ).html( "A programming joke of the day: " + result.joke); 
 		})() //fetch using async/await
-
+		**/
+		/**
 		fetch("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=tx")
 			.then((response) => {
 				return response.json();
 			}).then(result =>{
 				$("#response" ).html( "A programming joke of the day: " +  result.joke);
 			}) //fetch using Promise changing
+   		**/
 		</script>
 		//weather api
 	</div>
@@ -201,4 +203,5 @@
         // Call the function to check for first visit
         checkFirstVisit();
     </script>
+	
 </html>
