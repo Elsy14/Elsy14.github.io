@@ -7,16 +7,39 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS link added -->
 	<style>
-		body{
-			background-color: #000000;
-		}
-		.header-container {
-			background-color
-			color
-			padding text-align
-		}
-		.contact-info{
-		
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .resume {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .resume h1, .resume h2, .resume h3 {
+      color: #007bff;
+    }
+    .resume h4 {
+      color: #333333;
+    }
+    .resume p {
+      line-height: 1.6;
+    }
+    .resume ul {
+      padding-left: 20px;
+    }
+    .resume ul li {
+      list-style-type: none;
+      margin-bottom: 10px;
+    }
+    .resume hr {
+      border-top: 1px solid #ddd;
+    }
+  </style>	
 	</style>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
@@ -28,17 +51,17 @@
 	<div id="message"></div><br>
 	<img src="images/headshot.jpg" alt="My headshot" width="150">
 </div>
-<div class="container mt-4">
-<h2>About Me</h2>
-	<h3>Contact Information</h3>
+<div>
+<h2 class="text-center mb-6">About Me</h2>
+	<h3 class="row">Contact Information</h3>
 		<div id="email" onclick="showhideEmail()">Click to show my email</div>
 		<script type="text/JavaScript" src="email.js"></script>
 		
 		<a href="https://www.linkedin.com/in/elsyprempeh/">LinkedIn</a>
-	<h3>Education</h3>
+	<h3 class="row">Education</h3>
 		<p>I am currently in my fourth year pursuing my bachelor's in cyber security and a masters in IT at the same time at the University of Cincinnati College of Education, Criminal Justice and Human Services. My expected in May 2025</p>
 	
-	<h3>Experience</h3>
+	<h3 class="row">Experience</h3>
 		<dl>
 			<dt>UC School of IT Student Worker: August 2023-Present</dt>	
 			<dd><i>Fifth Third Bank: Cincinnati, Ohio</i></dd>
@@ -96,8 +119,8 @@
 			<li>Penetration Testing Tools</li>
 		</ul>
 </div>
-<div><br>
-<h2>Course: Web Application Development and Hacking</h2>
+<div class="row"><br>
+<h2class="text-center mb-6">Course: Web Application Development and Hacking</h2>
 	<h4>Professor: Dr. Phu Phung</h4>
 	<p>This course is focused on front-end development with HTML, JavaScript, and CSS and the back-end developemtn with PHP and SQL. It also incorporates vulnerabilities and attacks and how they can be mitigated with secure programmign principles.</p>
 	<p>These learning concepts are achieved in the following series of labs, projects, and hackathons:</p>
@@ -142,8 +165,8 @@
 
 </div>
 <div><br>
-<h2>Front-end Web Development Practice</h2>
-	<div>
+<h2 class="text-center mb-6">Front-end Web Development Practice</h2>
+	<div class="row">
 	<h4>Jquery and Javascript</h4>
 		<!-- <div id="date" onclick="document.getElementById('date').innerHTML= Date()">Click here to show date()</div> -->
 		<br>
