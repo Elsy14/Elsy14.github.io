@@ -6,9 +6,9 @@
 # Individual Project 1 - Professional Homepage with Front-end Eeb Development
 
 ## Overview
-[https://elsy14.github.io/waph.html](https://elsy14.github.io/waph.html)
+Webpage: [https://elsy14.github.io/waph.html](https://elsy14.github.io/waph.html)
 
-[https://github.com/Elsy14/Elsy14.github.io/tree/main](https://github.com/Elsy14/Elsy14.github.io/tree/main)
+Repository: [https://github.com/Elsy14/Elsy14.github.io/tree/main](https://github.com/Elsy14/Elsy14.github.io/tree/main)
 
 In this individual project, I implemented some front-end development concepts I have learned so far into a professional website showcasing my resume, course, and development concepts.
 
