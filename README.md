@@ -25,7 +25,7 @@ To deploy my site I first created a new public repository with the same username
 ### Non-technical requirements
 
 #### Open Source CSS 
--used an open-source bootstrap to implement CSS
+-i used an open-source bootstrap to implement CSS by adding the link and individual section designs.
 
 #### Page Tracker
 -Using the [https://flagcounter.com]/(https://flagcounter.com/) I customized a mini flag counter to count the number of times my page has been viewed. I was given the HTML link to place on my page.
@@ -39,7 +39,7 @@ To deploy my site I first created a new public repository with the same username
 
 
 #### Web API
--I navigated to [jQuery CDN(https://releases.jquery.com/) and used the script code to use the jQuery library. I added the code at the beginning of my HTML page
+-I navigated to [jQuery CDN}](https://releases.jquery.com/) and used the script code to use the jQuery library. I added the code at the beginning of my HTML page
 -I then used Ajax, Fetch, and Promise to demonstrate programming jokes every minute 
 -I finally used a third-party WEB API to display the weather from [weather.io](www.weatherbit.io) and integrated it into my HTML
 
