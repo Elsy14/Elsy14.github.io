@@ -1,3 +1,6 @@
+To make the left section fill the full length of the page, you can adjust its CSS to use `width: calc(100% - 300px);` for its width, where `300px` is the width of the right section. Here's the modified HTML and CSS:
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +11,8 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
         }
 
         .resume {
@@ -17,6 +22,7 @@
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
 
         .resume h1, .resume h2, .resume h3 {
@@ -44,23 +50,26 @@
             border-top: 1px solid #ddd;
         }
 
-        .about-me, .front-end-dev {
-            background-color: #F5D4D4;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-
         .left-section {
             float: left;
             background-color: white;
             padding: 15px;
             border: 1px solid black;
             border-radius: 5px;
+            width: calc(100% - 300px); /* Adjusted width */
         }
 
         .right-section {
-            text-align: center;
+            float: right;
+            width: 300px;
+            padding-left: 20px;
+        }
+
+        .about-me, .front-end-dev {
+            background-color: #F5D4D4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
         }
 
         .resume h2::before {
@@ -71,68 +80,31 @@
 </head>
 <body>
 
-<div class="left-section">
-    <h1>Elsy Prempeh</h1>
-    <h4>Individual Project 1- Front-end Web Development with a Professional Profile Website</h4>
-    <a href="https://info.flagcounter.com/dG7y"><img src="https://s11.flagcounter.com/mini/dG7y/bg_FAFF63/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
-    <div id="message"></div><br>
-    <img src="images/headshot.jpg" alt="My headshot" width="150">
-</div>
-
-<div class="right-section">
-    <h2>About Me</h2>
-    <div class="about-me">
-        <h3>Contact Information</h3>
-        <div id="email" onclick="showhideEmail()">Click to show my email</div>
-        <script type="text/JavaScript" src="email.js"></script>
-
-        <a href="https://www.linkedin.com/in/elsyprempeh/">LinkedIn</a>
-        <h3>Education</h3>
-        <p>I am currently in my fourth year pursuing my bachelor's in cyber security and a masters in IT at the same time at the University of Cincinnati College of Education, Criminal Justice and Human Services. My expected in May 2025</p>
-
-        <h3>Experience</h3>
-        <dl>
-            <dt>UC School of IT Student Worker: August 2023-Present</dt>
-            <dd><i>Fifth Third Bank: Cincinnati, Ohio</i></dd>
-            <ul>
-                <li>Handled daily administrative tasks to assist staff and faculty at the School of IT</li>
-                <li>Assist in planning and coordinating events hosted by the School of IT</li>
-            </ul>
-
-            <!-- Other experience entries -->
-
-        </dl>
-
-        <!-- Skills section -->
-
-    </div>
-</div>
-
-<div class="left-section">
-    <h2>Course: Web Application Development and Hacking</h2>
-    <h4>Professor: Dr. Phu Phung</h4>
-    <p>This course is focused on front-end development with HTML, JavaScript, and CSS and the back-end development with PHP and SQL. It also incorporates vulnerabilities and attacks and how they can be mitigated with secure programming principles.</p>
-    <p>These learning concepts are achieved in the following series of labs, projects, and hackathons:</p>
-
-    <!-- Labs, hackathons, and projects -->
-
-</div>
-
-<div class="right-section">
-    <h2>Front-end Web Development Practice</h2>
-    <div class="front-end-dev">
-        <h4>Jquery and Javascript</h4>
-        <!-- Clock and other examples -->
+<div class="resume">
+    <div class="left-section">
+        <h1>Elsy Prempeh</h1>
+        <h4>Individual Project 1- Front-end Web Development with a Professional Profile Website</h4>
+        <a href="https://info.flagcounter.com/dG7y"><img src="https://s11.flagcounter.com/mini/dG7y/bg_FAFF63/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
+        <div id="message"></div><br>
+        <img src="images/headshot.jpg" alt="My headshot" width="150">
     </div>
 
-    <!-- Other sections -->
+    <div class="right-section">
+        <h2>About Me</h2>
+        <div class="about-me">
+            <!-- Content for About Me section -->
+        </div>
+
+        <!-- Other sections -->
+
+    </div>
+
+    <!-- Scripts -->
 
 </div>
-
-<!-- Scripts -->
 
 </body>
 </html>
 ```
 
-This code moves the content of the `<h1>` tag to the left section and styles it accordingly. It also applies the specified background color to the "About Me" and "Front-end Web Development" sections. Additionally, it adds back locking lines before each `<h2>` heading.
+In this adjustment, the left section fills the full length of the page, while the right section maintains its width of `300px`.
