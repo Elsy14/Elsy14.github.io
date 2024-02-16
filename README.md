@@ -3,7 +3,7 @@
 
 ## Instructor: Dr. Phu Phung
 
-# Individual Project 1 - Professional homepage with front-end web development
+# Individual Project 1 - Professional Homepage with Front-end Eeb Development
 
 ## Overview
 
@@ -23,8 +23,8 @@ To deploy my site I first created a new public repository with the same username
 
 ### Non-technical requirements
 
-#### Open Source CSS - still finish
--used boot strap to implment css last
+#### Open Source CSS 
+-used an open-source bootstrap to implement CSS
 
 #### Page Tracker
 -Using the [https://flagcounter.com]/(https://flagcounter.com/) I customized a mini flag counter to count the number of times my page has been viewed. I was given the HTML link to place on my page.
@@ -35,12 +35,12 @@ To deploy my site I first created a new public repository with the same username
 -I used the inline javascript in HTML to show my email using the external email.js file. This is located in my contact information section
 -I used an inline script to demonstrate the digital clock
 -I used a remote javascript file - clock.js display the analog clock
-- **add my own java**
 
-#### Web API - adjust weather
+
+#### Web API
 -I navigated to [jQuery CDN(https://releases.jquery.com/) and used the script code to use the jQuery library. I added the code at the beginning of my HTML page
 -I then used Ajax, Fetch, and Promise to demonstrate programming jokes every minute 
--I finally used a third-party WEB API to display the weather from [weather.io](www.weatherbit.io) and integrated it into my HTML with**
+-I finally used a third-party WEB API to display the weather from [weather.io](www.weatherbit.io) and integrated it into my HTML
 
 #### Java Script cookies
 I used JavaScript to implement set, session start, and display cookies by displaying the welcome message for first-time visitors, and the previous visit time to returning visitors of my webpage.
