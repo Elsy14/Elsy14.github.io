@@ -4,6 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Elsy's Profile</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS link added -->
+	<style>
+		body{
+			background-color: #000000;
+		}
+		.header-container {
+			background-color
+			color
+			padding text-align
+		}
+		.contact-info{
+		
+	</style>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +28,7 @@
 	<div id="message"></div><br>
 	<img src="images/headshot.jpg" alt="My headshot" width="150">
 </div>
-<div>
+<div class="container mt-4">
 <h2>About Me</h2>
 	<h3>Contact Information</h3>
 		<div id="email" onclick="showhideEmail()">Click to show my email</div>
@@ -55,7 +69,7 @@
 				<li>Manage Salesforce instance and tested solutions with Salesforce Sandbox</li>
 			</ul>
 			
-			<dt>Customer service Associate</dt>
+			<dt>Customer service Associate August 2018-Present</dt>
 			<dd><i>Kroger Co.: Cincinnati, Ohio</i></dd>
 			<ul>
 				<li>Trained new employees to bag, use registers and work service desk</li>
@@ -158,13 +172,13 @@
 			drawTime(ctx,radius);
 		}
 		</script>
-		<p>Another inline example is the show email function in the Contact Me section above</p>
+		<p>Java inline example is the located in click to show email button in the "Contact Me" section above</p>
 		<!-- ADD ANOTHER EXAMPLE OF JAVA -->
 	</div>
 	<div>
 	<h4>Web APIs</h4>
 		<div>
-		<p>Joke APi Generation: </p>
+		<p>Joke API Generation: </p>
 		<div id="response"></div>
 			<script>
 				$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
