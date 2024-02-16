@@ -4,52 +4,64 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Elsy's Profile</title>
-	<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-    }
-    .resume {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .resume h1, .resume h2, .resume h3 {
-      color: #007bff;
-    }
-    .resume h4 {
-      color: #333333;
-    }
-    .resume p {
-      line-height: 1.6;
-    }
-    .resume ul {
-      padding-left: 20px;
-    }
-    .resume ul li {
-      list-style-type: none;
-      margin-bottom: 10px;
-    }
-    .resume hr {
-      border-top: 1px solid #ddd;
-    }
-  </style>	
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center; /* Center all text */
+        }
+        
+        .resume {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .resume h1 {
+            color: #007bff;
+            background-color: white; /* White background for h1 */
+            border: 2px solid black; /* Black outline for h1 */
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        
+        .resume h2,
+        .resume h3 {
+            color: #007bff;
+            background-color: #F5D4D4; /* Light pink background for h2 and h3 */
+            border: 1px solid black; /* Black outline for h2 and h3 */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .resume h3 {
+            border-bottom: 1px solid black; /* Black underline under h3 */
+        }
+        
+        .resume img {
+            border-radius: 50%; /* Make headshot image a circle */
+        }
+        
+        .resume div {
+            text-align: left; /* Reset text alignment inside divs */
+        }
+    </style>	
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
--->
 </head>
 <body>
-<div>
+<div class="resume">
 <h1>Elsy Prempeh</h1>
 	<h4>Individual Project 1- Front-end Web Development with a Professional Profile Website</h4>
 	<a href="https://info.flagcounter.com/dG7y"><img src="https://s11.flagcounter.com/mini/dG7y/bg_FAFF63/txt_000000/border_CCCCCC/flags_0/" alt="Flag Counter" border="0"></a>
 	<div id="message"></div><br>
 	<img src="images/headshot.jpg" alt="My headshot" width="150">
 </div>
-<div>
+<div class="resume">
 <h2>About Me</h2>
 	<h3>Contact Information</h3>
 		<div id="email" onclick="showhideEmail()">Click to show my email</div>
@@ -117,7 +129,7 @@
 			<li>Penetration Testing Tools</li>
 		</ul>
 </div>
-<div><br>
+<div class="resume"><br>
 <h2>Course: Web Application Development and Hacking</h2>
 	<h4>Professor: Dr. Phu Phung</h4>
 	<p>This course is focused on front-end development with HTML, JavaScript, and CSS and the back-end developemtn with PHP and SQL. It also incorporates vulnerabilities and attacks and how they can be mitigated with secure programmign principles.</p>
@@ -162,7 +174,7 @@
 		</dd>
 
 </div>
-<div><br>
+<div class="resume"><br>
 <h2>Front-end Web Development Practice</h2>
 	<div>
 	<h4>Jquery and Javascript</h4>
